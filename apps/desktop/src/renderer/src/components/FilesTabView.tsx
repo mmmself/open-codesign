@@ -1307,6 +1307,7 @@ function DocumentFilePreview({
                     </h4>
                     <div className="space-y-[var(--space-3)] text-[14px] leading-[1.82] text-[var(--color-text-primary)]">
                       {section.lines.map((line, index) => (
+                        // biome-ignore lint/suspicious/noArrayIndexKey: static document reading, lines never reorder
                         <p key={`${section.title}:${index}`} className="m-0 break-words">
                           {line}
                         </p>

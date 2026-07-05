@@ -610,9 +610,9 @@ function ActivityTodoBlock({ row }: { row: ActivityRow }) {
           />
         </div>
         <div className="space-y-[2px]">
-          {todos.map((todo, index) => (
+          {todos.map((todo) => (
             <div
-              key={`${index}-${todo.text.slice(0, 16)}`}
+              key={todo.text}
               className="grid grid-cols-[14px_minmax(0,1fr)] gap-[var(--space-2)] text-[12px] leading-[1.4]"
             >
               {todo.status === 'completed' ? (

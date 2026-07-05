@@ -238,7 +238,7 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
 }
 
 function hasOwn(value: Record<string, unknown>, key: string): boolean {
-  return Object.prototype.hasOwnProperty.call(value, key);
+  return Object.hasOwn(value, key);
 }
 
 function optionalNumber(value: Record<string, unknown>, key: string): number | null | undefined {

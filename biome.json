@@ -53,9 +53,9 @@
       "recommended": true,
       "suspicious": {
         "noExplicitAny": "error",
-        "noArrayIndexKey": "off",
+        "noArrayIndexKey": "error",
         "noAssignInExpressions": "off",
-        "noPrototypeBuiltins": "off",
+        "noPrototypeBuiltins": "error",
         "noDuplicateObjectKeys": "warn",
         "useIterableCallbackReturn": "off"
       },
@@ -68,7 +68,7 @@
         "noExcessiveCognitiveComplexity": "off",
         "noForEach": "off",
         "useLiteralKeys": "off",
-        "noCommaOperator": "off"
+        "noCommaOperator": "error"
       },
       "correctness": {
         "useExhaustiveDependencies": "warn",
