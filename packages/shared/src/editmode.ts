@@ -251,6 +251,7 @@ function isStringArray(value: unknown[]): value is string[] {
   return value.every((option) => typeof option === 'string');
 }
 
+// biome-ignore lint/complexity/noExcessiveCognitiveComplexity: existing complexity, see #118
 function validateEntry(value: unknown): TokenSchemaEntry | null {
   if (!isPlainObject(value)) return null;
   const kind = value['kind'];

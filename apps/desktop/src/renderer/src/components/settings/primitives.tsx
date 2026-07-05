@@ -553,6 +553,7 @@ export function ReasoningDepthSelector({
   }, [value]);
   const saveSeq = useRef(0);
 
+  // biome-ignore lint/complexity/noExcessiveCognitiveComplexity: existing complexity, see #118
   async function handleChange(next: ReasoningOption) {
     if (!window.codesign?.config?.updateProvider) return;
     const prev = current;
